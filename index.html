@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <title>Café</title>
+</head>
+
+<body>
+    <div class="caixa-video">
+        <video src="./img/coffe.mp4" loop muted autoplay></video>
+        <div class="mascara"></div>
+    </div>
+
+    <header>
+        <section>
+            <a href="#">
+                <img src="./img/logo(1).png" alt="logo">
+            </a>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#" onclick="mostrarModal()">Endereço</a>
+            </nav>
+        </section>
+    </header>
+
+
+    <section class="caixa-principal">
+        <div>
+            <h3>O melhor café da região</h3>
+            <p>
+                Descubra o prazer de um café único, que desperta seus sentidos. Feito com grãos selecionados e torrados na medida certa, nosso café proporciona uma experiência inigualável. Torne seus momentos mais especiais com o sabor que só
+            </p>
+            <a href="#" class="botao-link">Pegue o seu agora</a>
+        </div>
+    </section>
+
+    <section class="caixa-sobre">
+        <h3 class="title">Sobre <span>nós</span></h3>
+        <div class="sobre-container">
+            <div class="sobre-imagem">
+                <img src="./img/about-img.jpeg" alt="">
+            </div>
+
+            <div class="sobre-texto">
+                <h3>O que faz nosso café especial?</h3>
+                <p>
+                    Seu sabor intenso e aroma marcante despertam sensações únicas, tornando cada xícara uma experiência sensorial. A diversidade de variedades e métodos de preparo garantem uma variedade de sabores, agradando a todos os paladares. Mais do que uma bebida, o café é um convite para momento
+                </p>
+               >
+                <a href="#" class="botao-link">Saiba mais!</a>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="modal">
+        <h3 class="title">Nosso <span>Endereço</span></h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58673.47632121558!2d-45.976388454437256!3d-23.203307748670532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4b632aa9e9a9%3A0x25db206044adf316!2sOrigem%20Caf%C3%A9%20Cultural!5e0!3m2!1spt-BR!2sbr!4v1732396173731!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <div class="mascara-modal" onclick="esconderModal()"></div>
+
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>
